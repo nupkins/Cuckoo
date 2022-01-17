@@ -36,3 +36,11 @@ pip install -U cuckoo vmcloak
 vmcloak-vboxnet0
 
 vmcloak init --verbose --win7x64 win7x64base --cpus 2 --ramsize 2048
+
+vmcloak clone win7x64base win7x64cuckoo
+
+vmcloak list deps
+
+vmcloak install win7x64cuckoo adobepdf pillow dotnet java flash vcredist vcredist.version=2015u3 wallpaper
+
+vmcloak install win7x64cuckoo ie11
